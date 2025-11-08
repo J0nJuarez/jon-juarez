@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: "AudioNugget";
+  src:local("AudioNugget"),
+  url('./assets/fonts/AudioNugget.ttf') 
+}

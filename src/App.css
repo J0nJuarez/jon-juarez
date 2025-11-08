@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'AudioNugget', sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-shadow: 10px -2px 0px #368FE0;
+}
