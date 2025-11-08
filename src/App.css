@@ -1,15 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* descripcion */
+
+.clip-1-2 {
+clip-path: polygon( 100% 86.446%,100% 86.446%,99.84% 88.644%,99.377% 90.73%,98.637% 92.675%,97.644% 94.451%,96.423% 96.03%,95% 97.385%,93.4% 98.487%,91.648% 99.309%,89.769% 99.823%,87.788% 100%,12.212% 100%,12.212% 100%,10.231% 99.823%,8.352% 99.309%,6.6% 98.487%,5% 97.385%,3.577% 96.03%,2.356% 94.451%,1.363% 92.675%,0.623% 90.73%,0.16% 88.644%,0% 86.446%,0% 43.373%,0% 43.373%,0.14% 41.444%,0.546% 39.613%,1.196% 37.906%,2.068% 36.347%,3.14% 34.961%,4.389% 33.771%,5.793% 32.804%,7.331% 32.082%,8.98% 31.632%,10.719% 31.476%,10.719% 31.476%,11.423% 31.413%,12.092% 31.23%,12.714% 30.938%,13.283% 30.546%,13.789% 30.064%,14.223% 29.503%,14.576% 28.871%,14.84% 28.18%,15.004% 27.438%,15.061% 26.657%,15.061% 13.554%,15.061% 13.554%,15.221% 11.356%,15.684% 9.27%,16.424% 7.325%,17.417% 5.549%,18.638% 3.97%,20.061% 2.615%,21.661% 1.513%,23.413% 0.691%,25.292% 0.177%,27.273% 0%,87.788% 0%,87.788% 0%,89.769% 0.177%,91.648% 0.691%,93.4% 1.513%,95% 2.615%,96.423% 3.97%,97.644% 5.549%,98.637% 7.325%,99.377% 9.27%,99.84% 11.356%,100% 13.554%,100% 86.446% );
+height: 100%;
+width: auto;
+background: url('./assets/pattern-mar.png') repeat,
+            url('./assets/pattern-mar.png') repeat;
+background-blend-mode: lighten; 
+animation:
+  mover1 20s ease-in-out infinite alternate,
+  mover2 25s ease-in-out infinite alternate;
+opacity: 0.9;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'AudioNugget', sans-serif;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 400;
-  color: #FFFFFF;
-  text-shadow: 10px -2px 0px #368FE0;
+
+
+@keyframes mover1 {
+  0%   { background-position: 0 0; }
+  25%  { background-position: 30px 10px; }
+  50%  { background-position: 60px 20px; }
+  75%  { background-position: 30px 15px; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes mover2 {
+  0%   { background-position: 0 0; }
+  30%  { background-position: -40px 15px; }
+  60%  { background-position: -80px 30px; }
+  90%  { background-position: -30px 10px; }
+  100% { background-position: 0 0; }
 }
